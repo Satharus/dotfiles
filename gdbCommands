@@ -1,0 +1,11 @@
+display/15i $eip
+display/x $eax
+display/x $ebx
+display/x $ecx
+display/x $edx
+display/x $edi
+display/x $esi
+display/x $ebp
+display/32xw $esp
+set disassembly-flavor intel
+break main

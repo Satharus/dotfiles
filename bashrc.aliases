@@ -1,0 +1,26 @@
+#
+# ~/.bashrc.aliases
+#
+
+alias ls='ls --color=auto'
+alias pacrepo='sudo reflector --latest 20 --sort rate  --save /etc/pacman.d/mirrorlist'
+alias pacman='sudo pacman'
+
+alias chck="ping 8.8.8.8"
+alias clr="clear"
+
+alias gdbx="gdb -x ~/Documents/gdbCommands"
+alias gdbx64="gdb -x ~/Documents/gdbCommandsx64"
+alias q="exit"
+
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
+function backupDotFiles
+{
+    backupDir='/path/to/backup/dir'
+    cp -v ~/.vimrc              "$backupDir"/vimrc
+    cp -v ~/.bashrc             "$backupDir"/bashrc
+    cp -v ~/.bashrc.aliases     "$backupDir"/bashrc.aliases      
+    cp -v ~/.ps1.prompt         "$backupDir"/ps1.prompt
+}
