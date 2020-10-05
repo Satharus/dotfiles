@@ -16,6 +16,8 @@ alias q="exit"
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 
+alias ascii="/path/to/asciitable.py"
+
 function backupDotFiles
 {
     backupDir='/path/to/backup/dir'
