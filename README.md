@@ -15,6 +15,8 @@ This file contains a couple of aliases that I use almost daily. Most of them are
 
 ![](./Examples/GDB.png)
 
+- [asciitable.py](https://github.com/Satharus/asciitable) is a script that prints the ASCII table.
+
 ## .vimrc
 ![](./Examples/ViM.png)
 
