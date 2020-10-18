@@ -22,8 +22,9 @@ map r <C-r>
 vmap <C-S-c> :!xclip -f -sel clip<CR>
 map <C-S-v> :-2r !xclip -o -sel clip<CR>
 
-" Add relative line numbers
+" Add relative line numbers, cursor shows current line
 set relativenumber
+set number
 
 " Set syntax highlighting
 syntax on
