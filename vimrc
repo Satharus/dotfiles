@@ -9,18 +9,11 @@ set mouse=a
 " Use dl to duplicate a line
 noremap dl Yp
 
-" Use system clipboard
-set clipboard+=unnamedplus
-
-" Fix visual block mode
-command! Vb normal! <C-v>
+" Use system clipboard (requires gVim)
+set clipboard^=unnamed,unnamedplus
 
 " Map r to redo
 map r <C-r>
-
-" Set copy and paste commands in vim
-vmap <C-S-c> :!xclip -f -sel clip<CR>
-map <C-S-v> :-2r !xclip -o -sel clip<CR>
 
 " Add relative line numbers, cursor shows current line
 set relativenumber
