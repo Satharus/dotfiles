@@ -12,6 +12,9 @@ noremap dl Yp
 " Use system clipboard (requires gVim)
 set clipboard^=unnamed,unnamedplus
 
+" Map Ctrl + Shift + C to yank
+map <C-S-c> y
+
 " Map r to redo
 map r <C-r>
 
