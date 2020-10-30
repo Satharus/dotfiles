@@ -27,13 +27,13 @@ function backupDotFiles
     cp -v ~/.ps1.prompt         "$backupDir"/ps1.prompt
 }
 
-function downloadSong
+function downloadAudio
 {
-    #Usage: downloadSong https://link "Song Name" deleteVideo?
-    youtube-dl --audio-quality 5 --audio-format mp3 -o "$2" "$1" 
-    ffmpeg -i "$2".mkv -b:a 320K -vn "$2".mp3
+    #Usage: downloadAudio https://link "File Name" deleteVideo?
+    youtube-dl -f 'bestaudio' --audio-quality 5 --audio-format mp3 -o "$2".webm "$1" 
+    ffmpeg -i "$2".webm -b:a 320K -vn "$2".mp3
     if [[ $3 == 1 ]]
     then
-        rm "$2".mkv
+        rm "$2".webm
     fi
 }
