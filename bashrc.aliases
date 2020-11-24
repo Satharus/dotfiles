@@ -1,6 +1,11 @@
 #
 # ~/.bashrc.aliases
 #
+function volset
+{
+    export v=" -f $1 --profile $2 "
+}
+alias vol="volatility \$v"
 
 alias ls='ls --color=auto'
 alias pacrepo='sudo reflector --latest 20 --sort rate  --save /etc/pacman.d/mirrorlist'
