@@ -10,6 +10,7 @@ alias vol="volatility \$v"
 alias ls='ls --color=auto'
 alias pacrepo='sudo reflector --latest 20 --sort rate  --save /etc/pacman.d/mirrorlist'
 alias pacman='sudo pacman'
+alias dmsg='dmesg --color=always | less -r'
 
 alias chck="ping 8.8.8.8"
 alias clr="clear"
